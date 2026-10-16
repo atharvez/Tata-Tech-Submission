@@ -1,0 +1,122 @@
+[
+  {
+    "id": "TC-01",
+    "category": "SWC_INVENTORY",
+    "question": "What are the core application software components defined in the BCM v2.4 architecture and their safety levels?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 1,
+    "expected_keywords": ["SWC_ExteriorLighting", "SWC_WiperControl", "SWC_CentralLocking", "SWC_PowerManagement", "ASIL B", "ASIL A", "QM"]
+  },
+  {
+    "id": "TC-02",
+    "category": "PORT_INTERFACE",
+    "question": "What ports, interfaces, and data elements are defined for SWC_WiperControl in BCM v2.4?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 2,
+    "expected_keywords": ["R_RainIntensity", "If_RainIntensity", "RainPercent", "uint8", "R_VehicleSpeed", "P_WiperMotorCmd", "P_WashPumpControl"]
+  },
+  {
+    "id": "TC-03",
+    "category": "TARGET_HARDWARE",
+    "question": "What target microcontroller silicon is specified for the Body Control Module ECU in the HLD?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 1,
+    "expected_keywords": ["Infineon", "AURIX", "TC397", "TriCore", "dual-lockstep", "HSM"]
+  },
+  {
+    "id": "TC-04",
+    "category": "RUNNABLE_SCHEDULING",
+    "question": "What runnable entity handles wiper arbitration in SWC_WiperControl, what is its periodicity, and which OS task executes it?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 3,
+    "expected_keywords": ["RE_WiperSpeedArbitration", "TimingEvent", "20 ms cyclic", "Task_Periodic_20ms"]
+  },
+  {
+    "id": "TC-05",
+    "category": "FUNCTIONAL_FLOW",
+    "question": "Explain the rain-activated automatic wiper sweep functional flow from sensor input to actuator output.",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 2,
+    "expected_keywords": ["photodiode", "LIN", "R_RainIntensity", "RE_WiperSpeedArbitration", "SpeedKmh", "P_WiperMotorCmd", "H-Bridge"]
+  },
+  {
+    "id": "TC-06",
+    "category": "INCONSISTENCY_CHECK",
+    "question": "What is the data type mismatch identified between SWC_ExteriorLighting and SWC_PowerManagement for vehicle speed?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 3,
+    "expected_keywords": ["R_VehicleSpeed", "uint16", "P_VehicleSpeed", "uint8", "SpeedKmh", "overflow", "255 km/h"]
+  },
+  {
+    "id": "TC-07",
+    "category": "DANGLING_PORT",
+    "question": "Which required port in SWC_ExteriorLighting has no corresponding providing port in the BCM v2.4 HLD?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 3,
+    "expected_keywords": ["R_HazardLightCmd", "If_HazardCommand", "dangling", "providing port"]
+  },
+  {
+    "id": "TC-08",
+    "category": "REVISION_DIFF",
+    "question": "Compare BCM v2.3 and BCM v2.4. Which software component was deprecated and removed in v2.4?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.3_Legacy",
+    "expected_page": 1,
+    "expected_keywords": ["SWC_AnalogLightingLegacy", "DEPRECATED", "REMOVED", "v2.4"]
+  },
+  {
+    "id": "TC-09",
+    "category": "REVISION_DIFF",
+    "question": "What new actuator port was introduced in SWC_WiperControl in v2.4 that did not exist in v2.3?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 2,
+    "expected_keywords": ["P_WashPumpControl", "If_WashPumpControl", "PumpActive", "boolean"]
+  },
+  {
+    "id": "TC-10",
+    "category": "ADAS_ARCHITECTURE",
+    "question": "What software components comprise the ADAS Domain Controller architecture and what is its overall safety level?",
+    "expected_doc_id": "AUTOSAR_HLD_ADAS_v1.2",
+    "expected_page": 1,
+    "expected_keywords": ["SWC_CameraPerception", "SWC_RadarFusion", "SWC_TrajectoryPlanner", "SWC_VehicleMotionControl", "ASIL D"]
+  },
+  {
+    "id": "TC-11",
+    "category": "ADAS_FUSION",
+    "question": "Which SWCs in the ADAS controller exchange the If_FusedPerception interface and through which ports?",
+    "expected_doc_id": "AUTOSAR_HLD_ADAS_v1.2",
+    "expected_page": 1,
+    "expected_keywords": ["SWC_RadarFusion", "P_FusedPerception", "SWC_TrajectoryPlanner", "R_FusedPerception"]
+  },
+  {
+    "id": "TC-12",
+    "category": "BMS_ARCHITECTURE",
+    "question": "What safety software component in the Battery Management System handles thermal runaway mitigation and contactor control?",
+    "expected_doc_id": "AUTOSAR_HLD_BMS_v3.1",
+    "expected_page": 1,
+    "expected_keywords": ["SWC_ThermalRunawayGuard", "SWC_ContactorManager", "ASIL D", "pyrofuse", "precharge"]
+  },
+  {
+    "id": "TC-13",
+    "category": "CENTRAL_LOCKING",
+    "question": "What triggers the runnable RE_LockStateArbitration in SWC_CentralLocking and what is its event type?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 3,
+    "expected_keywords": ["RE_LockStateArbitration", "DataReceivedEvent", "R_CrashSignal", "Task_Event_HighPri"]
+  },
+  {
+    "id": "TC-14",
+    "category": "HIGH_BEAM_LOGIC",
+    "question": "What are the speed and illuminance threshold conditions required for automatic high-beam activation in SWC_ExteriorLighting?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 2,
+    "expected_keywords": ["LightLevelLux", "50 Lux", "SpeedKmh", "40 km/h", "P_HighBeamStatus", "TRUE"]
+  },
+  {
+    "id": "TC-15",
+    "category": "RTE_VFB",
+    "question": "How does the AUTOSAR layered architecture partition application software from underlying hardware in the BCM?",
+    "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+    "expected_page": 1,
+    "expected_keywords": ["Application SWC", "Sensor-Actuator SWC", "BSW", "Virtual Functional Bus", "VFB", "RTE"]
+  }
+]

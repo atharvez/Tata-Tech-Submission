@@ -1,0 +1,42 @@
+[
+  {
+    "id": "INC-01",
+    "category": "DATA_TYPE_MISMATCH",
+    "severity": "CRITICAL",
+    "description": "Port R_VehicleSpeed in SWC_ExteriorLighting & SWC_WiperControl expects uint16, but P_VehicleSpeed in SWC_PowerManagement supplies uint8.",
+    "affected_swcs": ["SWC_ExteriorLighting", "SWC_WiperControl", "SWC_PowerManagement"],
+    "port_name": "R_VehicleSpeed / P_VehicleSpeed",
+    "interface": "If_VehicleSpeed",
+    "expected_fix": "Align datatype in SWC_PowerManagement to uint16 SpeedKmh."
+  },
+  {
+    "id": "INC-02",
+    "category": "DANGLING_REQUIRED_PORT",
+    "severity": "HIGH",
+    "description": "Port R_HazardLightCmd on SWC_ExteriorLighting references If_HazardCommand but no SWC provides this interface.",
+    "affected_swcs": ["SWC_ExteriorLighting"],
+    "port_name": "R_HazardLightCmd",
+    "interface": "If_HazardCommand",
+    "expected_fix": "Add P-Port P_HazardLightCmd to Body Gateway or Infotainment HMI SWC."
+  },
+  {
+    "id": "INC-03",
+    "category": "REVISION_DIFF_REMOVAL",
+    "severity": "MEDIUM",
+    "description": "SWC_AnalogLightingLegacy was deprecated and removed in v2.4 compared to baseline v2.3.",
+    "affected_swcs": ["SWC_AnalogLightingLegacy"],
+    "port_name": "N/A",
+    "interface": "N/A",
+    "expected_fix": "Ensure all legacy lighting callouts are migrated to SWC_ExteriorLighting."
+  },
+  {
+    "id": "INC-04",
+    "category": "REVISION_DIFF_ADDITION",
+    "severity": "INFO",
+    "description": "Port P_WashPumpControl added to SWC_WiperControl in v2.4 (did not exist in v2.3).",
+    "affected_swcs": ["SWC_WiperControl"],
+    "port_name": "P_WashPumpControl",
+    "interface": "If_WashPumpControl",
+    "expected_fix": "Map P_WashPumpControl to windshield washer relay actuator."
+  }
+]

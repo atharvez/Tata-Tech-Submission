@@ -1,0 +1,57 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "lookup_software_component",
+      "description": "Retrieves the architectural specification, ports, interfaces, and runnables for a named AUTOSAR Software Component.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "swc_name": {
+            "type": "string",
+            "description": "Name of the SWC (e.g., SWC_ExteriorLighting, SWC_WiperControl, SWC_CameraPerception)"
+          }
+        },
+        "required": ["swc_name"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "verify_port_connections",
+      "description": "Checks whether a required port (R-Port) has a matching providing port (P-Port) with identical interface and datatype across the VFB.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "port_name": {
+            "type": "string",
+            "description": "Name of the port to verify (e.g., R_VehicleSpeed, R_HazardLightCmd)"
+          }
+        },
+        "required": ["port_name"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "compare_hld_revisions",
+      "description": "Executes structural diff comparison between two HLD document baselines to detect added, modified, or removed components and interfaces.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "baseline_v1": {
+            "type": "string",
+            "description": "Legacy baseline version (e.g., v2.3)"
+          },
+          "baseline_v2": {
+            "type": "string",
+            "description": "New target version (e.g., v2.4)"
+          }
+        },
+        "required": ["baseline_v1", "baseline_v2"]
+      }
+    }
+  }
+]

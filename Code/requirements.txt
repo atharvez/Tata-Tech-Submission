@@ -1,0 +1,10 @@
+# Core Runtime Requirements (Standard Library Out-of-the-Box)
+# Python 3.10 / 3.11 / 3.12 compatible
+
+# PDF Parsing & Generation
+pypdf>=4.2.0
+reportlab>=4.1.0
+
+# Optional for dense embeddings enhancement (Fallback engine included)
+# sentence-transformers>=3.0.0
+# faiss-cpu>=1.8.0

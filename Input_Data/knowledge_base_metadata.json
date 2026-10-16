@@ -1,0 +1,81 @@
+{
+  "corpus_title": "AUTOSAR High-Level Design (HLD) Technical Knowledge Base",
+  "organization": "Tata Technologies Ltd. & PCCOE Department of AI & ML",
+  "case_study_id": "CS-01",
+  "classification": "Public Reference Architecture",
+  "documents": [
+    {
+      "document_id": "AUTOSAR_HLD_BCM_v2.4",
+      "filename": "AUTOSAR_HLD_BCM_BodyControlModule_v2.4.pdf",
+      "title": "Body Control Module (BCM) Software Architecture HLD",
+      "version": "2.4",
+      "safety_class": "ISO 26262 ASIL B",
+      "platform": "AUTOSAR Classic Release 4.4",
+      "target_ecu": "Infineon AURIX TC397 TriCore",
+      "sections": [
+        "1. System Overview and Scope",
+        "2. Software Component (SWC) Architecture Inventory",
+        "3. Detailed Port and Interface Specifications",
+        "4. End-to-End Functional Flows and Traceability",
+        "5. Runnable Entities and RTE Scheduling Configuration",
+        "6. Architectural Traceability and Known Design Constraints"
+      ]
+    },
+    {
+      "document_id": "AUTOSAR_HLD_BCM_v2.3_Legacy",
+      "filename": "AUTOSAR_HLD_BCM_v2.3_Legacy_Comparison.pdf",
+      "title": "Body Control Module (BCM) Software Architecture [Legacy Baseline]",
+      "version": "2.3",
+      "safety_class": "ISO 26262 QM / ASIL A",
+      "platform": "AUTOSAR Classic Release 4.3",
+      "target_ecu": "Infineon AURIX TC297 TriCore",
+      "sections": [
+        "1. System Overview",
+        "2. Legacy Software Components (SWC Inventory)",
+        "3. Legacy Port Matrix"
+      ]
+    },
+    {
+      "document_id": "AUTOSAR_HLD_ADAS_v1.2",
+      "filename": "AUTOSAR_HLD_ADAS_DomainController_v1.2.pdf",
+      "title": "ADAS Domain Controller Software Architecture HLD",
+      "version": "1.2",
+      "safety_class": "ISO 26262 ASIL D",
+      "platform": "AUTOSAR Adaptive Platform R20-11",
+      "target_ecu": "NVIDIA DRIVE AGX / Renesas R-Car H3",
+      "sections": [
+        "1. System Overview",
+        "2. Software Components"
+      ]
+    },
+    {
+      "document_id": "AUTOSAR_HLD_BMS_v3.1",
+      "filename": "AUTOSAR_HLD_BMS_BatteryManagementSystem_v3.1.pdf",
+      "title": "Battery Management System (BMS) Architecture HLD",
+      "version": "3.1",
+      "safety_class": "ISO 26262 ASIL C/D",
+      "platform": "AUTOSAR Classic Release 4.4",
+      "target_ecu": "NXP S32K344 / Analog Devices ADBMS6815",
+      "sections": [
+        "1. System Overview",
+        "2. Software Components"
+      ]
+    }
+  ],
+  "arxml_specifications": [
+    {
+      "file": "bcm_components.arxml",
+      "schema_version": "AUTOSAR 4.4.0",
+      "swc_count": 3,
+      "port_count": 12,
+      "interface_count": 3
+    },
+    {
+      "file": "adas_components.arxml",
+      "schema_version": "AUTOSAR 4.4.0",
+      "swc_count": 3,
+      "port_count": 5,
+      "interface_count": 2
+    }
+  ]
+}

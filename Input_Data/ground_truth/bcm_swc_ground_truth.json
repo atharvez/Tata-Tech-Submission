@@ -1,0 +1,62 @@
+{
+  "document": "AUTOSAR_HLD_BCM_BodyControlModule_v2.4.pdf",
+  "system": "Body Control Module (BCM)",
+  "version": "2.4",
+  "software_components": [
+    {
+      "name": "SWC_ExteriorLighting",
+      "type": "Application SWC",
+      "safety_level": "ASIL B",
+      "ports": [
+        {"name": "R_AmbientLight", "direction": "R-Port", "interface": "If_AmbientLight", "element": "LightLevelLux", "datatype": "uint16"},
+        {"name": "R_VehicleSpeed", "direction": "R-Port", "interface": "If_VehicleSpeed", "element": "SpeedKmh", "datatype": "uint16"},
+        {"name": "P_LowBeamStatus", "direction": "P-Port", "interface": "If_LowBeamStatus", "element": "LowBeamActive", "datatype": "boolean"},
+        {"name": "P_HighBeamStatus", "direction": "P-Port", "interface": "If_HighBeamStatus", "element": "HighBeamActive", "datatype": "boolean"},
+        {"name": "R_HazardLightCmd", "direction": "R-Port", "interface": "If_HazardCommand", "element": "HazardActive", "datatype": "boolean"}
+      ],
+      "runnables": [
+        {"name": "RE_LightingManager", "trigger": "10 ms cyclic", "task": "Task_Periodic_10ms"}
+      ]
+    },
+    {
+      "name": "SWC_WiperControl",
+      "type": "Sensor-Actuator SWC",
+      "safety_level": "ASIL A",
+      "ports": [
+        {"name": "R_RainIntensity", "direction": "R-Port", "interface": "If_RainIntensity", "element": "RainPercent", "datatype": "uint8"},
+        {"name": "R_VehicleSpeed", "direction": "R-Port", "interface": "If_VehicleSpeed", "element": "SpeedKmh", "datatype": "uint16"},
+        {"name": "P_WiperMotorCmd", "direction": "P-Port", "interface": "If_WiperMotorCmd", "element": "MotorSpeedState", "datatype": "uint8"},
+        {"name": "P_WashPumpControl", "direction": "P-Port", "interface": "If_WashPumpControl", "element": "PumpActive", "datatype": "boolean"}
+      ],
+      "runnables": [
+        {"name": "RE_WiperSpeedArbitration", "trigger": "20 ms cyclic", "task": "Task_Periodic_20ms"}
+      ]
+    },
+    {
+      "name": "SWC_CentralLocking",
+      "type": "Application SWC",
+      "safety_level": "QM",
+      "ports": [
+        {"name": "R_DoorAjarSensors", "direction": "R-Port", "interface": "If_DoorStatus", "element": "DoorAjarMask", "datatype": "uint8"},
+        {"name": "P_LockActuators", "direction": "P-Port", "interface": "If_LockActuator", "element": "LockCommand", "datatype": "uint8"},
+        {"name": "R_CrashSignal", "direction": "R-Port", "interface": "If_CrashEvent", "element": "CrashConfirmed", "datatype": "boolean"}
+      ],
+      "runnables": [
+        {"name": "RE_LockStateArbitration", "trigger": "On R_CrashSignal", "task": "Task_Event_HighPri"}
+      ]
+    },
+    {
+      "name": "SWC_PowerManagement",
+      "type": "Service Proxy SWC",
+      "safety_level": "ASIL B",
+      "ports": [
+        {"name": "P_VehicleSpeed", "direction": "P-Port", "interface": "If_VehicleSpeed", "element": "SpeedKmh", "datatype": "uint8"},
+        {"name": "P_BatteryVoltage", "direction": "P-Port", "interface": "If_BatteryState", "element": "VoltageMilliVolts", "datatype": "uint16"},
+        {"name": "P_ECUSleepState", "direction": "P-Port", "interface": "If_PowerState", "element": "SleepMode", "datatype": "uint8"}
+      ],
+      "runnables": [
+        {"name": "RE_PowerStateMonitoring", "trigger": "100 ms cyclic", "task": "Task_Periodic_100ms"}
+      ]
+    }
+  ]
+}

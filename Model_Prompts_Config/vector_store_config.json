@@ -1,0 +1,23 @@
+{
+  "index_type": "Dense Cosine + Lexical BM25 Hybrid Index",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimension": 384,
+  "distance_metric": "Cosine Similarity",
+  "bm25_params": {
+    "k1": 1.5,
+    "b": 0.75,
+    "alpha": 0.45
+  },
+  "dense_weight": 0.55,
+  "min_similarity_score": 0.15,
+  "default_top_k": 3,
+  "metadata_fields_indexed": [
+    "document_id",
+    "document_title",
+    "section",
+    "page_number",
+    "platform",
+    "safety_class",
+    "swc_entities"
+  ]
+}

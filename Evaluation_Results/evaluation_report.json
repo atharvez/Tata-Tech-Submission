@@ -1,0 +1,464 @@
+{
+  "evaluation_timestamp": "2026-10-16T11:30:18Z",
+  "total_test_scenarios": 15,
+  "overall_metrics": {
+    "mean_faithfulness": 0.9014,
+    "mean_answer_relevance": 0.8509,
+    "mean_context_precision": 0.9394,
+    "mean_citation_accuracy": 1.0,
+    "mean_latency_ms": 1.61
+  },
+  "anomalies_detected": 7,
+  "detailed_results": [
+    {
+      "test_id": "TC-01",
+      "category": "SWC_INVENTORY",
+      "question": "What are the core application software components defined in the BCM v2.4 architecture and their safety levels?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 1,
+      "latency_ms": 2.02,
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.805,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM v2.3 Legacy Comparison",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 1,
+          "section": "1. System Overview and Scope",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM v2.3 Legacy Comparison\n**Section Reference:** 1. System Overview (Page 1)\n\n> \ud83d\udee1\ufe0f **SAFETY NOTICE:** Functional safety rating **ISO 26262 ASIL B** applies to this component.\n\n#### Architectural Analysis & Evidence:\n- AUTOSAR HIGH-LEVEL DESIGN (HLD) SPECIFICATION\n- [LEGACY]\n- System Component: Body Control Module (BCM) Software Architecture\n- Document Ref: BCM-HLD-AUTOSAR-REL-2025-v2.3 | Status: Superseded Baseline | Safety Class: ISO 26262 QM/ASIL A\n- 1. System Overview [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Legacy baseline specification v2.3 for the Body Control Module. Prior to introduction of advanced wash pump control and ASIL B exterior\n- lighting upgrades.\n- 2. Legacy Software Components (SWC Inventory) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Component Name (SWC) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- SWC Type [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Status in v2.4\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained (Updated to ASIL B)\n- SWC_AnalogLightingLegacy [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Sensor-Actuator SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- DEPRECATED / REMOVED in v2.4\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained\n- SWC_PowerManagement [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Service Proxy SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained\n- 3. Legacy Port Matrix [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- In v2.3, SWC_WiperControl did not exist as a dedicated component; basic wiper logic was embedded inside SWC_AnalogLightingLegacy. [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- The port P_WashPumpControl was not defined. [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (1. System Overview and Scope, Page 1) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]"
+    },
+    {
+      "test_id": "TC-02",
+      "category": "PORT_INTERFACE",
+      "question": "What ports, interfaces, and data elements are defined for SWC_WiperControl in BCM v2.4?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 2,
+      "latency_ms": 0.99,
+      "metrics": {
+        "faithfulness": 0.8923,
+        "answer_relevance": 0.8,
+        "context_precision": 0.8571,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM v2.3 Legacy Comparison",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 3,
+          "section": "5. Runnable Entities and RTE Scheduling Configuration",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM v2.3 Legacy Comparison\n**Section Reference:** 1. System Overview (Page 1)\n\n> \ud83d\udee1\ufe0f **SAFETY NOTICE:** Functional safety rating **ISO 26262 ASIL B** applies to this component.\n\n#### Architectural Analysis & Evidence:\n- AUTOSAR HIGH-LEVEL DESIGN (HLD) SPECIFICATION\n- [LEGACY]\n- System Component: Body Control Module (BCM) Software Architecture\n- Document Ref: BCM-HLD-AUTOSAR-REL-2025-v2.3 | Status: Superseded Baseline | Safety Class: ISO 26262 QM/ASIL A\n- 1. System Overview [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Legacy baseline specification v2.3 for the Body Control Module. Prior to introduction of advanced wash pump control and ASIL B exterior\n- lighting upgrades.\n- 2. Legacy Software Components (SWC Inventory) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Component Name (SWC) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- SWC Type [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Status in v2.4\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained (Updated to ASIL B)\n- SWC_AnalogLightingLegacy [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Sensor-Actuator SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- DEPRECATED / REMOVED in v2.4\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained\n- SWC_PowerManagement [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Service Proxy SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained\n- 3. Legacy Port Matrix [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- In v2.3, SWC_WiperControl did not exist as a dedicated component; basic wiper logic was embedded inside SWC_AnalogLightingLegacy. [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- The port P_WashPumpControl was not defined. [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (5. Runnable Entities and RTE Scheduling Configuration, Page 3) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+    },
+    {
+      "test_id": "TC-03",
+      "category": "TARGET_HARDWARE",
+      "question": "What target microcontroller silicon is specified for the Body Control Module ECU in the HLD?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 1,
+      "latency_ms": 1.04,
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.8,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM v2.3 Legacy Comparison",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 1,
+          "section": "1. System Overview and Scope",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM v2.3 Legacy Comparison\n**Section Reference:** 1. System Overview (Page 1)\n\n> \ud83d\udee1\ufe0f **SAFETY NOTICE:** Functional safety rating **ISO 26262 ASIL B** applies to this component.\n\n#### Architectural Analysis & Evidence:\n- AUTOSAR HIGH-LEVEL DESIGN (HLD) SPECIFICATION\n- [LEGACY]\n- System Component: Body Control Module (BCM) Software Architecture\n- Document Ref: BCM-HLD-AUTOSAR-REL-2025-v2.3 | Status: Superseded Baseline | Safety Class: ISO 26262 QM/ASIL A\n- 1. System Overview [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Legacy baseline specification v2.3 for the Body Control Module. Prior to introduction of advanced wash pump control and ASIL B exterior\n- lighting upgrades.\n- 2. Legacy Software Components (SWC Inventory) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Component Name (SWC) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- SWC Type [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Status in v2.4\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained (Updated to ASIL B)\n- SWC_AnalogLightingLegacy [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Sensor-Actuator SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- DEPRECATED / REMOVED in v2.4\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained\n- SWC_PowerManagement [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Service Proxy SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained\n- 3. Legacy Port Matrix [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- In v2.3, SWC_WiperControl did not exist as a dedicated component; basic wiper logic was embedded inside SWC_AnalogLightingLegacy. [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- The port P_WashPumpControl was not defined. [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (1. System Overview and Scope, Page 1) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]"
+    },
+    {
+      "test_id": "TC-04",
+      "category": "RUNNABLE_SCHEDULING",
+      "question": "What runnable entity handles wiper arbitration in SWC_WiperControl, what is its periodicity, and which OS task executes it?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 3,
+      "latency_ms": 2.56,
+      "metrics": {
+        "faithfulness": 0.9557,
+        "answer_relevance": 0.8,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 3,
+          "section": "5. Runnable Entities and RTE Scheduling Configuration",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 2,
+          "section": "3. Detailed Port and Interface Specifications",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM BodyControlModule v2.4\n**Section Reference:** 5. Runnable Entities and RTE Scheduling Configuration (Page 3)\n\n#### Architectural Analysis & Evidence:\n- 5. Runnable Entities and RTE Scheduling Configuration [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- Runnable Entity Name\n- Owning SWC [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- Activation Event\n- Period / Trigger\n- OS Task Assignment\n- RE_LightingManager\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- TimingEvent\n- 10 ms cyclic\n- Task_Periodic_10ms\n- RE_WiperSpeedArbitrati\n- on\n- SWC_WiperControl [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- TimingEvent\n- 20 ms cyclic\n- Task_Periodic_20ms\n- RE_LockStateArbitratio\n- n\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- DataReceivedEvent\n- On R_CrashSignal\n- Task_Event_HighPri\n- RE_PowerStateMonitorin\n- g\n- SWC_PowerManagemen [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- t\n- TimingEvent\n- 100 ms cyclic\n- Task_Periodic_100ms\n- 6. Architectural Traceability and Known Design Constraints\n- Section 6.1 Known Inconsistencies & Open Architecture Review Items:\n- \u26a0\ufe0f **\u007f Discrepancy INC-01 (Data Type Mismatch): SWC_ExteriorLighting and SWC_WiperControl declare port R_VehicleSpeed expecting** [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- interface If_VehicleSpeed with data element SpeedKmh of type uint16. However, SWC_PowerManagement exposes providing port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- P_VehicleSpeed with data element SpeedKmh of type uint8. This 8-bit to 16-bit truncation will cause overflow clipping if vehicle speed\n- exceeds 255 km/h.\n- \u007f Discrepancy INC-02 (Dangling Required Port): SWC_ExteriorLighting defines required port R_HazardLightCmd referencing [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- If_HazardCommand. In the current BCM architecture v2.4, there is no corresponding Providing Port (P-Port) implemented on any active [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- SWC, leading to an unresolved VFB connection. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f Discrepancy INC-03 (Missing Signal Mapping): SWC_CentralLocking requires R_CrashSignal from the Airbag Controller over CAN. The [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- gateway routing table lacks a PDU mapping for CAN-ID 0x140 into the RTE virtual signal bus.\n- Document Version History:\n- \u007f v2.4 (Current): Added SWC_WiperControl WashPump actuation, updated ASIL ratings. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f v2.3 (Legacy): Original BCM baseline with legacy SWC_AnalogLightingLegacy. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f v2.0: Initial concept release.\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (3. Detailed Port and Interface Specifications, Page 2) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]"
+    },
+    {
+      "test_id": "TC-05",
+      "category": "FUNCTIONAL_FLOW",
+      "question": "Explain the rain-activated automatic wiper sweep functional flow from sensor input to actuator output.",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 2,
+      "latency_ms": 0.96,
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.8364,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 2,
+          "section": "3. Detailed Port and Interface Specifications",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 1,
+          "section": "1. System Overview and Scope",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM BodyControlModule v2.4\n**Section Reference:** 3. Detailed Port and Interface Specifications (Page 2)\n\n#### Architectural Analysis & Evidence:\n- 3. Detailed Port and Interface Specifications [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- Communication between SWCs is strictly conducted across the RTE via typed Sender-Receiver (S/R) and Client-Server (C/S) interfaces. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- The following matrix defines the approved ports, referenced interface prototypes, payload data types, and initial values. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- Component\n- Port Prototype [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- Directio\n- n\n- Interface Name [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- Data Element\n- Data Type\n- Init Value\n- SWC_ExteriorLight [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- ing\n- R_AmbientLight\n- R-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_AmbientLigh\n- t\n- LightLevelLux\n- uint16\n- 0\n- SWC_ExteriorLight [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- ing\n- R_VehicleSpeed\n- R-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_VehicleSpee\n- d\n- SpeedKmh\n- uint16\n- 0\n- SWC_ExteriorLight [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- ing\n- P_LowBeamStatus\n- P-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_LowBeamStat\n- us\n- LowBeamActive\n- boolean\n- FALSE\n- SWC_ExteriorLight [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- ing\n- P_HighBeamStatu\n- s\n- P-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_HighBeamSta\n- tus\n- HighBeamActive\n- boolean\n- FALSE\n- SWC_ExteriorLight [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- ing\n- R_HazardLightCm\n- d\n- R-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_HazardComma\n- nd\n- HazardActive\n- boolean\n- FALSE\n- SWC_WiperControl [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- R_RainIntensity\n- R-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_RainIntensi\n- ty\n- RainPercent\n- uint8\n- 0\n- SWC_WiperControl [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- R_VehicleSpeed\n- R-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_VehicleSpee\n- d\n- SpeedKmh\n- uint16\n- 0\n- SWC_WiperControl [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- P_WiperMotorCmd\n- P-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_WiperMotorC\n- md\n- MotorSpeedState\n- uint8\n- 0 (OFF)\n- SWC_WiperControl [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- P_WashPumpContr\n- ol\n- P-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_WashPumpCon\n- trol\n- PumpActive\n- boolean\n- FALSE\n- SWC_CentralLockin [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- g\n- R_DoorAjarSenso\n- rs\n- R-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_DoorStatus\n- DoorAjarMask\n- uint8\n- 0x00\n- SWC_CentralLockin [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- g\n- P_LockActuators\n- P-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_LockActuato\n- r\n- LockCommand\n- uint8\n- 0\n- (UNLOCKED)\n- SWC_CentralLockin [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- g\n- R_CrashSignal\n- R-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_CrashEvent\n- CrashConfirmed\n- boolean\n- FALSE\n- SWC_PowerManageme [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- nt\n- P_VehicleSpeed\n- P-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_VehicleSpee\n- d\n- SpeedKmh\n- uint8\n- 0\n- SWC_PowerManageme [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- nt\n- P_BatteryVoltag\n- e\n- P-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_BatteryStat\n- e\n- VoltageMilliVol\n- ts\n- uint16\n- 12600\n- SWC_PowerManageme [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- nt\n- P_ECUSleepState\n- P-Port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- If_PowerState\n- SleepMode\n- uint8\n- 1 (RUN)\n- 4. End-to-End Functional Flows and Traceability [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- Flow 1: Rain-Activated Automatic Wiper Sweep (ASIL A Traceability)\n- 1. Rain sensor optical photodiode measures infrared attenuation and publishes raw optical loss via LIN bus. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- 2. LIN BSW Driver passes signal to RTE, which provides data to SWC_WiperControl via port R_RainIntensity. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- 3. Runnable entity 'RE_WiperSpeedArbitration' executes every 20ms, evaluating current RainPercent against hysteresis threshold [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- (Threshold_Low = 15%, Threshold_High = 60%).\n- 4. Vehicle speed is simultaneously read via R_VehicleSpeed. If SpeedKmh > 80 km/h, wiper frequency is elevated to next stage. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- 5. Output command is published to port P_WiperMotorCmd (0=OFF, 1=Intermittent, 2=Low, 3=High) to drive H-Bridge FET actuators. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- Flow 2: High-Beam Auto Switching Flow\n- 1. Forward-facing camera evaluates oncoming glare and ambient illuminance, transmitted via CAN-FD to port R_AmbientLight. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- 2. SWC_ExteriorLighting runnable 'RE_LightingManager' triggers every 10ms. When LightLevelLux < 50 Lux and SpeedKmh > 40 km/h, [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- P_HighBeamStatus is asserted TRUE.\n- 3. When oncoming vehicle detected or vehicle speed drops below 30 km/h, P_HighBeamStatus transitions to FALSE with 250ms [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]\n- debouncing.\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (1. System Overview and Scope, Page 1) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]"
+    },
+    {
+      "test_id": "TC-06",
+      "category": "INCONSISTENCY_CHECK",
+      "question": "What is the data type mismatch identified between SWC_ExteriorLighting and SWC_PowerManagement for vehicle speed?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 3,
+      "latency_ms": 1.01,
+      "metrics": {
+        "faithfulness": 0.9557,
+        "answer_relevance": 0.8944,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 3,
+          "section": "5. Runnable Entities and RTE Scheduling Configuration",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 2,
+          "section": "3. Detailed Port and Interface Specifications",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM BodyControlModule v2.4\n**Section Reference:** 5. Runnable Entities and RTE Scheduling Configuration (Page 3)\n\n#### Architectural Analysis & Evidence:\n- 5. Runnable Entities and RTE Scheduling Configuration [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- Runnable Entity Name\n- Owning SWC [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- Activation Event\n- Period / Trigger\n- OS Task Assignment\n- RE_LightingManager\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- TimingEvent\n- 10 ms cyclic\n- Task_Periodic_10ms\n- RE_WiperSpeedArbitrati\n- on\n- SWC_WiperControl [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- TimingEvent\n- 20 ms cyclic\n- Task_Periodic_20ms\n- RE_LockStateArbitratio\n- n\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- DataReceivedEvent\n- On R_CrashSignal\n- Task_Event_HighPri\n- RE_PowerStateMonitorin\n- g\n- SWC_PowerManagemen [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- t\n- TimingEvent\n- 100 ms cyclic\n- Task_Periodic_100ms\n- 6. Architectural Traceability and Known Design Constraints\n- Section 6.1 Known Inconsistencies & Open Architecture Review Items:\n- \u26a0\ufe0f **\u007f Discrepancy INC-01 (Data Type Mismatch): SWC_ExteriorLighting and SWC_WiperControl declare port R_VehicleSpeed expecting** [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- interface If_VehicleSpeed with data element SpeedKmh of type uint16. However, SWC_PowerManagement exposes providing port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- P_VehicleSpeed with data element SpeedKmh of type uint8. This 8-bit to 16-bit truncation will cause overflow clipping if vehicle speed\n- exceeds 255 km/h.\n- \u007f Discrepancy INC-02 (Dangling Required Port): SWC_ExteriorLighting defines required port R_HazardLightCmd referencing [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- If_HazardCommand. In the current BCM architecture v2.4, there is no corresponding Providing Port (P-Port) implemented on any active [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- SWC, leading to an unresolved VFB connection. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f Discrepancy INC-03 (Missing Signal Mapping): SWC_CentralLocking requires R_CrashSignal from the Airbag Controller over CAN. The [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- gateway routing table lacks a PDU mapping for CAN-ID 0x140 into the RTE virtual signal bus.\n- Document Version History:\n- \u007f v2.4 (Current): Added SWC_WiperControl WashPump actuation, updated ASIL ratings. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f v2.3 (Legacy): Original BCM baseline with legacy SWC_AnalogLightingLegacy. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f v2.0: Initial concept release.\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (3. Detailed Port and Interface Specifications, Page 2) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]"
+    },
+    {
+      "test_id": "TC-07",
+      "category": "DANGLING_PORT",
+      "question": "Which required port in SWC_ExteriorLighting has no corresponding providing port in the BCM v2.4 HLD?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 3,
+      "latency_ms": 3.55,
+      "metrics": {
+        "faithfulness": 0.9549,
+        "answer_relevance": 1.0,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 3,
+          "section": "5. Runnable Entities and RTE Scheduling Configuration",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM v2.3 Legacy Comparison",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM BodyControlModule v2.4\n**Section Reference:** 5. Runnable Entities and RTE Scheduling Configuration (Page 3)\n\n#### Architectural Analysis & Evidence:\n- 5. Runnable Entities and RTE Scheduling Configuration [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- Runnable Entity Name\n- Owning SWC [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- Activation Event\n- Period / Trigger\n- OS Task Assignment\n- RE_LightingManager\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- TimingEvent\n- 10 ms cyclic\n- Task_Periodic_10ms\n- RE_WiperSpeedArbitrati\n- on\n- SWC_WiperControl [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- TimingEvent\n- 20 ms cyclic\n- Task_Periodic_20ms\n- RE_LockStateArbitratio\n- n\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- DataReceivedEvent\n- On R_CrashSignal\n- Task_Event_HighPri\n- RE_PowerStateMonitorin\n- g\n- SWC_PowerManagemen [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- t\n- TimingEvent\n- 100 ms cyclic\n- Task_Periodic_100ms\n- 6. Architectural Traceability and Known Design Constraints\n- Section 6.1 Known Inconsistencies & Open Architecture Review Items:\n- \u26a0\ufe0f **\u007f Discrepancy INC-01 (Data Type Mismatch): SWC_ExteriorLighting and SWC_WiperControl declare port R_VehicleSpeed expecting** [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- interface If_VehicleSpeed with data element SpeedKmh of type uint16. However, SWC_PowerManagement exposes providing port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- P_VehicleSpeed with data element SpeedKmh of type uint8. This 8-bit to 16-bit truncation will cause overflow clipping if vehicle speed\n- exceeds 255 km/h.\n- \u007f Discrepancy INC-02 (Dangling Required Port): SWC_ExteriorLighting defines required port R_HazardLightCmd referencing [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- If_HazardCommand. In the current BCM architecture v2.4, there is no corresponding Providing Port (P-Port) implemented on any active [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- SWC, leading to an unresolved VFB connection. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f Discrepancy INC-03 (Missing Signal Mapping): SWC_CentralLocking requires R_CrashSignal from the Airbag Controller over CAN. The [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- gateway routing table lacks a PDU mapping for CAN-ID 0x140 into the RTE virtual signal bus.\n- Document Version History:\n- \u007f v2.4 (Current): Added SWC_WiperControl WashPump actuation, updated ASIL ratings. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f v2.3 (Legacy): Original BCM baseline with legacy SWC_AnalogLightingLegacy. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f v2.0: Initial concept release.\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM v2.3 Legacy Comparison (1. System Overview, Page 1) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+    },
+    {
+      "test_id": "TC-08",
+      "category": "REVISION_DIFF",
+      "question": "Compare BCM v2.3 and BCM v2.4. Which software component was deprecated and removed in v2.4?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.3_Legacy",
+      "expected_page": 1,
+      "latency_ms": 1.51,
+      "metrics": {
+        "faithfulness": 0.8923,
+        "answer_relevance": 0.9857,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM v2.3 Legacy Comparison",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 3,
+          "section": "5. Runnable Entities and RTE Scheduling Configuration",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM v2.3 Legacy Comparison\n**Section Reference:** 1. System Overview (Page 1)\n\n> \ud83d\udee1\ufe0f **SAFETY NOTICE:** Functional safety rating **ISO 26262 ASIL B** applies to this component.\n\n#### Architectural Analysis & Evidence:\n- AUTOSAR HIGH-LEVEL DESIGN (HLD) SPECIFICATION\n- [LEGACY]\n- System Component: Body Control Module (BCM) Software Architecture\n- Document Ref: BCM-HLD-AUTOSAR-REL-2025-v2.3 | Status: Superseded Baseline | Safety Class: ISO 26262 QM/ASIL A\n- 1. System Overview [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Legacy baseline specification v2.3 for the Body Control Module. Prior to introduction of advanced wash pump control and ASIL B exterior\n- lighting upgrades.\n- 2. Legacy Software Components (SWC Inventory) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Component Name (SWC) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- SWC Type [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Status in v2.4\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained (Updated to ASIL B)\n- SWC_AnalogLightingLegacy [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Sensor-Actuator SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- DEPRECATED / REMOVED in v2.4\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained\n- SWC_PowerManagement [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Service Proxy SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained\n- 3. Legacy Port Matrix [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- In v2.3, SWC_WiperControl did not exist as a dedicated component; basic wiper logic was embedded inside SWC_AnalogLightingLegacy. [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- The port P_WashPumpControl was not defined. [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (5. Runnable Entities and RTE Scheduling Configuration, Page 3) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+    },
+    {
+      "test_id": "TC-09",
+      "category": "REVISION_DIFF",
+      "question": "What new actuator port was introduced in SWC_WiperControl in v2.4 that did not exist in v2.3?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 2,
+      "latency_ms": 2.53,
+      "metrics": {
+        "faithfulness": 0.8923,
+        "answer_relevance": 0.8,
+        "context_precision": 0.8,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM v2.3 Legacy Comparison",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 3,
+          "section": "5. Runnable Entities and RTE Scheduling Configuration",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM v2.3 Legacy Comparison\n**Section Reference:** 1. System Overview (Page 1)\n\n> \ud83d\udee1\ufe0f **SAFETY NOTICE:** Functional safety rating **ISO 26262 ASIL B** applies to this component.\n\n#### Architectural Analysis & Evidence:\n- AUTOSAR HIGH-LEVEL DESIGN (HLD) SPECIFICATION\n- [LEGACY]\n- System Component: Body Control Module (BCM) Software Architecture\n- Document Ref: BCM-HLD-AUTOSAR-REL-2025-v2.3 | Status: Superseded Baseline | Safety Class: ISO 26262 QM/ASIL A\n- 1. System Overview [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Legacy baseline specification v2.3 for the Body Control Module. Prior to introduction of advanced wash pump control and ASIL B exterior\n- lighting upgrades.\n- 2. Legacy Software Components (SWC Inventory) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Component Name (SWC) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- SWC Type [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Status in v2.4\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained (Updated to ASIL B)\n- SWC_AnalogLightingLegacy [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Sensor-Actuator SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- DEPRECATED / REMOVED in v2.4\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained\n- SWC_PowerManagement [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Service Proxy SWC [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- Retained\n- 3. Legacy Port Matrix [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- In v2.3, SWC_WiperControl did not exist as a dedicated component; basic wiper logic was embedded inside SWC_AnalogLightingLegacy. [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n- The port P_WashPumpControl was not defined. [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (5. Runnable Entities and RTE Scheduling Configuration, Page 3) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+    },
+    {
+      "test_id": "TC-10",
+      "category": "ADAS_ARCHITECTURE",
+      "question": "What software components comprise the ADAS Domain Controller architecture and what is its overall safety level?",
+      "expected_doc_id": "AUTOSAR_HLD_ADAS_v1.2",
+      "expected_page": 1,
+      "latency_ms": 1.51,
+      "metrics": {
+        "faithfulness": 0.8567,
+        "answer_relevance": 0.8364,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD ADAS DomainController v1.2",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 1,
+          "section": "1. System Overview and Scope",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD ADAS DomainController v1.2\n**Section Reference:** 1. System Overview (Page 1)\n\n> \ud83d\udee1\ufe0f **SAFETY NOTICE:** Functional safety rating **ISO 26262 ASIL D** applies to this component.\n\n#### Architectural Analysis & Evidence:\n- AUTOSAR HIGH-LEVEL DESIGN (HLD) SPECIFICATION\n- System Component: ADAS Domain Controller Software Architecture\n- Document Ref: ADAS-HLD-AUTOSAR-REL-2026-v1.2 | Status: Approved Baseline | Safety Class: ISO 26262 ASIL D\n- 1. System Overview [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Specifies the AUTOSAR Adaptive and Classic mixed platform architecture for the Advanced Driver Assistance System (ADAS) Domain\n- Controller. Handles Level 2+ Automated Emergency Braking (AEB), Adaptive Cruise Control (ACC), and Lane Centering Assist (LCA). ASIL\n- D safety requirements apply.\n- 2. Software Components [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Component Name (SWC) [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- SWC Type [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Safety Level\n- Responsibility\n- SWC_CameraPerception [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Adaptive Application\n- ASIL B\n- Neural object detection for vehicles, pedestrians, lanes.\n- SWC_RadarFusion [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Adaptive Application\n- ASIL B\n- Kalman filter fusion of 77GHz front radar and 4 corner radars.\n- SWC_TrajectoryPlanner [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- ASIL D\n- Computes collision-free longitudinal/lateral acceleration\n- trajectories.\n- SWC_VehicleMotionControl [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Actuator SWC [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- ASIL D\n- Translates trajectories into torque requests and steering angle\n- requests.\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (1. System Overview and Scope, Page 1) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]"
+    },
+    {
+      "test_id": "TC-11",
+      "category": "ADAS_FUSION",
+      "question": "Which SWCs in the ADAS controller exchange the If_FusedPerception interface and through which ports?",
+      "expected_doc_id": "AUTOSAR_HLD_ADAS_v1.2",
+      "expected_page": 1,
+      "latency_ms": 1.0,
+      "metrics": {
+        "faithfulness": 0.8588,
+        "answer_relevance": 0.8,
+        "context_precision": 0.8,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD ADAS DomainController v1.2",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 2,
+          "section": "3. Detailed Port and Interface Specifications",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD ADAS DomainController v1.2\n**Section Reference:** 1. System Overview (Page 1)\n\n> \ud83d\udee1\ufe0f **SAFETY NOTICE:** Functional safety rating **ISO 26262 ASIL D** applies to this component.\n\n#### Architectural Analysis & Evidence:\n- AUTOSAR HIGH-LEVEL DESIGN (HLD) SPECIFICATION\n- System Component: ADAS Domain Controller Software Architecture\n- Document Ref: ADAS-HLD-AUTOSAR-REL-2026-v1.2 | Status: Approved Baseline | Safety Class: ISO 26262 ASIL D\n- 1. System Overview [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Specifies the AUTOSAR Adaptive and Classic mixed platform architecture for the Advanced Driver Assistance System (ADAS) Domain\n- Controller. Handles Level 2+ Automated Emergency Braking (AEB), Adaptive Cruise Control (ACC), and Lane Centering Assist (LCA). ASIL\n- D safety requirements apply.\n- 2. Software Components [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Component Name (SWC) [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- SWC Type [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Safety Level\n- Responsibility\n- SWC_CameraPerception [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Adaptive Application\n- ASIL B\n- Neural object detection for vehicles, pedestrians, lanes.\n- SWC_RadarFusion [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Adaptive Application\n- ASIL B\n- Kalman filter fusion of 77GHz front radar and 4 corner radars.\n- SWC_TrajectoryPlanner [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- ASIL D\n- Computes collision-free longitudinal/lateral acceleration\n- trajectories.\n- SWC_VehicleMotionControl [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- Actuator SWC [Source: AUTOSAR HLD ADAS DomainController v1.2, Page: 1, Section: 1. System Overview]\n- ASIL D\n- Translates trajectories into torque requests and steering angle\n- requests.\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (3. Detailed Port and Interface Specifications, Page 2) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]"
+    },
+    {
+      "test_id": "TC-12",
+      "category": "BMS_ARCHITECTURE",
+      "question": "What safety software component in the Battery Management System handles thermal runaway mitigation and contactor control?",
+      "expected_doc_id": "AUTOSAR_HLD_BMS_v3.1",
+      "expected_page": 1,
+      "latency_ms": 1.0,
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 1.0,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BMS BatteryManagementSystem v3.1",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM v2.3 Legacy Comparison",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BMS BatteryManagementSystem v3.1\n**Section Reference:** 1. System Overview (Page 1)\n\n> \ud83d\udee1\ufe0f **SAFETY NOTICE:** Functional safety rating **ISO 26262 ASIL D** applies to this component.\n\n#### Architectural Analysis & Evidence:\n- AUTOSAR HIGH-LEVEL DESIGN (HLD) SPECIFICATION\n- System Component: Battery Management System (BMS) Architecture\n- Document Ref: BMS-HLD-AUTOSAR-REL-2026-v3.1 | Status: Approved Baseline | Safety Class: ISO 26262 ASIL C/D\n- 1. System Overview [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- Specifies the high-voltage 800V Traction Battery Management System software architecture. Enforces Cell Voltage Monitoring, State of\n- Charge (SoC), State of Health (SoH), High Voltage Contactor Control, and Thermal Runaway Mitigation.\n- 2. Software Components [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- Component Name (SWC) [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- SWC Type [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- Safety Level\n- Responsibility\n- SWC_CellMonitor [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- Sensor SWC [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- ASIL C\n- Samples 96 cell voltages and 24 NTC temperature sensors\n- over isoSPI bus.\n- SWC_StateEstimation [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- Application SWC [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- ASIL C\n- Extended Kalman Filter for SoC, SoH, and Power Limits\n- calculation.\n- SWC_ContactorManager [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- Actuator SWC [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- ASIL D\n- Main Positive, Main Negative, and Precharge contactor\n- sequencing.\n- SWC_ThermalRunawayGuard [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- Safety SWC [Source: AUTOSAR HLD BMS BatteryManagementSystem v3.1, Page: 1, Section: 1. System Overview]\n- ASIL D\n- Detects off-gas pressure spikes and triggers high-voltage\n- pyrofuse.\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM v2.3 Legacy Comparison (1. System Overview, Page 1) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+    },
+    {
+      "test_id": "TC-13",
+      "category": "CENTRAL_LOCKING",
+      "question": "What triggers the runnable RE_LockStateArbitration in SWC_CentralLocking and what is its event type?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 3,
+      "latency_ms": 1.03,
+      "metrics": {
+        "faithfulness": 0.9549,
+        "answer_relevance": 0.8,
+        "context_precision": 0.8,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 3,
+          "section": "5. Runnable Entities and RTE Scheduling Configuration",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM v2.3 Legacy Comparison",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM BodyControlModule v2.4\n**Section Reference:** 5. Runnable Entities and RTE Scheduling Configuration (Page 3)\n\n#### Architectural Analysis & Evidence:\n- 5. Runnable Entities and RTE Scheduling Configuration [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- Runnable Entity Name\n- Owning SWC [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- Activation Event\n- Period / Trigger\n- OS Task Assignment\n- RE_LightingManager\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- TimingEvent\n- 10 ms cyclic\n- Task_Periodic_10ms\n- RE_WiperSpeedArbitrati\n- on\n- SWC_WiperControl [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- TimingEvent\n- 20 ms cyclic\n- Task_Periodic_20ms\n- RE_LockStateArbitratio\n- n\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- DataReceivedEvent\n- On R_CrashSignal\n- Task_Event_HighPri\n- RE_PowerStateMonitorin\n- g\n- SWC_PowerManagemen [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- t\n- TimingEvent\n- 100 ms cyclic\n- Task_Periodic_100ms\n- 6. Architectural Traceability and Known Design Constraints\n- Section 6.1 Known Inconsistencies & Open Architecture Review Items:\n- \u26a0\ufe0f **\u007f Discrepancy INC-01 (Data Type Mismatch): SWC_ExteriorLighting and SWC_WiperControl declare port R_VehicleSpeed expecting** [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- interface If_VehicleSpeed with data element SpeedKmh of type uint16. However, SWC_PowerManagement exposes providing port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- P_VehicleSpeed with data element SpeedKmh of type uint8. This 8-bit to 16-bit truncation will cause overflow clipping if vehicle speed\n- exceeds 255 km/h.\n- \u007f Discrepancy INC-02 (Dangling Required Port): SWC_ExteriorLighting defines required port R_HazardLightCmd referencing [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- If_HazardCommand. In the current BCM architecture v2.4, there is no corresponding Providing Port (P-Port) implemented on any active [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- SWC, leading to an unresolved VFB connection. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f Discrepancy INC-03 (Missing Signal Mapping): SWC_CentralLocking requires R_CrashSignal from the Airbag Controller over CAN. The [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- gateway routing table lacks a PDU mapping for CAN-ID 0x140 into the RTE virtual signal bus.\n- Document Version History:\n- \u007f v2.4 (Current): Added SWC_WiperControl WashPump actuation, updated ASIL ratings. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f v2.3 (Legacy): Original BCM baseline with legacy SWC_AnalogLightingLegacy. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f v2.0: Initial concept release.\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM v2.3 Legacy Comparison (1. System Overview, Page 1) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+    },
+    {
+      "test_id": "TC-14",
+      "category": "HIGH_BEAM_LOGIC",
+      "question": "What are the speed and illuminance threshold conditions required for automatic high-beam activation in SWC_ExteriorLighting?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 2,
+      "latency_ms": 1.99,
+      "metrics": {
+        "faithfulness": 0.9557,
+        "answer_relevance": 0.8,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 3,
+          "section": "5. Runnable Entities and RTE Scheduling Configuration",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 2,
+          "section": "3. Detailed Port and Interface Specifications",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM BodyControlModule v2.4\n**Section Reference:** 5. Runnable Entities and RTE Scheduling Configuration (Page 3)\n\n#### Architectural Analysis & Evidence:\n- 5. Runnable Entities and RTE Scheduling Configuration [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- Runnable Entity Name\n- Owning SWC [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- Activation Event\n- Period / Trigger\n- OS Task Assignment\n- RE_LightingManager\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- TimingEvent\n- 10 ms cyclic\n- Task_Periodic_10ms\n- RE_WiperSpeedArbitrati\n- on\n- SWC_WiperControl [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- TimingEvent\n- 20 ms cyclic\n- Task_Periodic_20ms\n- RE_LockStateArbitratio\n- n\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- DataReceivedEvent\n- On R_CrashSignal\n- Task_Event_HighPri\n- RE_PowerStateMonitorin\n- g\n- SWC_PowerManagemen [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- t\n- TimingEvent\n- 100 ms cyclic\n- Task_Periodic_100ms\n- 6. Architectural Traceability and Known Design Constraints\n- Section 6.1 Known Inconsistencies & Open Architecture Review Items:\n- \u26a0\ufe0f **\u007f Discrepancy INC-01 (Data Type Mismatch): SWC_ExteriorLighting and SWC_WiperControl declare port R_VehicleSpeed expecting** [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- interface If_VehicleSpeed with data element SpeedKmh of type uint16. However, SWC_PowerManagement exposes providing port [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- P_VehicleSpeed with data element SpeedKmh of type uint8. This 8-bit to 16-bit truncation will cause overflow clipping if vehicle speed\n- exceeds 255 km/h.\n- \u007f Discrepancy INC-02 (Dangling Required Port): SWC_ExteriorLighting defines required port R_HazardLightCmd referencing [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- If_HazardCommand. In the current BCM architecture v2.4, there is no corresponding Providing Port (P-Port) implemented on any active [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- SWC, leading to an unresolved VFB connection. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f Discrepancy INC-03 (Missing Signal Mapping): SWC_CentralLocking requires R_CrashSignal from the Airbag Controller over CAN. The [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- gateway routing table lacks a PDU mapping for CAN-ID 0x140 into the RTE virtual signal bus.\n- Document Version History:\n- \u007f v2.4 (Current): Added SWC_WiperControl WashPump actuation, updated ASIL ratings. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f v2.3 (Legacy): Original BCM baseline with legacy SWC_AnalogLightingLegacy. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 3, Section: 5. Runnable Entities and RTE Scheduling Configuration]\n- \u007f v2.0: Initial concept release.\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM BodyControlModule v2.4 (3. Detailed Port and Interface Specifications, Page 2) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 2, Section: 3. Detailed Port and Interface Specifications]"
+    },
+    {
+      "test_id": "TC-15",
+      "category": "RTE_VFB",
+      "question": "How does the AUTOSAR layered architecture partition application software from underlying hardware in the BCM?",
+      "expected_doc_id": "AUTOSAR_HLD_BCM_v2.4",
+      "expected_page": 1,
+      "latency_ms": 1.51,
+      "metrics": {
+        "faithfulness": 0.9513,
+        "answer_relevance": 0.805,
+        "context_precision": 0.8333,
+        "citation_accuracy": 1.0
+      },
+      "retrieved_chunk_count": 3,
+      "citations_found": [
+        {
+          "document_title": "AUTOSAR HLD BCM BodyControlModule v2.4",
+          "page_number": 1,
+          "section": "1. System Overview and Scope",
+          "raw_tag": "[Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]"
+        },
+        {
+          "document_title": "AUTOSAR HLD BCM v2.3 Legacy Comparison",
+          "page_number": 1,
+          "section": "1. System Overview",
+          "raw_tag": "[Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+        }
+      ],
+      "generated_answer": "### Verified AUTOSAR Architecture Specification\n**Specification Document:** AUTOSAR HLD BCM BodyControlModule v2.4\n**Section Reference:** 1. System Overview and Scope (Page 1)\n\n> \ud83d\udee1\ufe0f **SAFETY NOTICE:** Functional safety rating **ISO 26262 ASIL B** applies to this component.\n\n#### Architectural Analysis & Evidence:\n- AUTOSAR HIGH-LEVEL DESIGN (HLD) SPECIFICATION\n- System Component: Body Control Module (BCM) Software Architecture\n- Document Ref: BCM-HLD-AUTOSAR-REL-2026-v2.4 | Status: Approved Baseline | Safety Class: ISO 26262 ASIL B\n- 1. System Overview and Scope [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- This High-Level Design document specifies the AUTOSAR Classic Release 4.4 software architecture for the Body Control Module (BCM).\n- The BCM ECU oversees essential body electronics including exterior lighting, intelligent wiper control, central locking, and low-power vehicle\n- sleep state transitions. The software architecture conforms strictly to AUTOSAR layered standards, partitioning functionality into Application\n- Software Components (Application SWCs), Sensor-Actuator SWCs, and Basic Software (BSW) services bridged by the Virtual Functional [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- Bus (VFB) and AUTOSAR Runtime Environment (RTE).\n- \ud83d\udcbb **Hardware Target:** Target Hardware Platform: Infineon AURIX TC397 32-bit TriCore, dual-lockstep cores with HSM security extension. [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- 2. Software Component (SWC) Architecture Inventory [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- The BCM application layer comprises four core software components:\n- Component Name (SWC) [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- SWC Type [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- Safety Level\n- Primary Functional Responsibility\n- SWC_ExteriorLighting [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- Application SWC [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- ASIL B\n- Controls Low Beam, High Beam, DRL, Turn Indicators, and\n- Emergency Hazard Flasher logic.\n- SWC_WiperControl [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- Sensor-Actuator\n- SWC [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- ASIL A\n- Interprets optical rain intensity, manages\n- intermittent/continuous wiper sweep, and wash pump\n- actuation.\n- SWC_CentralLocking [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- Application SWC [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- QM\n- Processes Remote Keyless Entry (RKE) RF signals, manages\n- door lock motors, and crash unlock override.\n- SWC_PowerManagement [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- Service Proxy SWC [Source: AUTOSAR HLD BCM BodyControlModule v2.4, Page: 1, Section: 1. System Overview and Scope]\n- ASIL B\n- Monitors 12V terminal voltages (KL30/KL15), coordinates\n- network sleep/wake triggers, and load shedding.\n\n#### Corroborating Specification:\n- **Reference:** AUTOSAR HLD BCM v2.3 Legacy Comparison (1. System Overview, Page 1) [Source: AUTOSAR HLD BCM v2.3 Legacy Comparison, Page: 1, Section: 1. System Overview]"
+    }
+  ]
+}
